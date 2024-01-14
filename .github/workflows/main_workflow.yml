@@ -33,10 +33,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     needs: [build]
-    environment: Deployment
+    environment: Development
     steps:
-      - name: Deploy
-        run: echo Deploying
+      - name: Development
+        run: echo Development
 
   TESTING:
     runs-on: ubuntu-latest
