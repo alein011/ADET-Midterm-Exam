@@ -36,7 +36,7 @@ jobs:
     environment: Deployment
     steps:
       - name: Deploy
-        run: Deploying
+        run: echo Deploying
 
   TESTING:
     runs-on: ubuntu-latest
@@ -44,7 +44,7 @@ jobs:
     environment: Testing
     steps:
       - name: Test
-        run: Testing
+        run: echo Testing
 
   PRODUCTION:
     runs-on: ubuntu-latest
@@ -52,7 +52,7 @@ jobs:
     environment: Production
     steps:
       - name: Production
-        run: Production
+        run: echo Production
     
     
   
